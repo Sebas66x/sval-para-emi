@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect
 from django.contrib import messages
 
-CLAVE_SECRETA = "Sebitas"  # La clave es "Sebitas" (sensible a mayúsculas)
+CLAVE_SECRETA = "Sebas_66x"  # La clave es "Sebitas" (sensible a mayúsculas)
 
 def acceso(request):
     # Si ya está autenticado, redirigir directo a sorpresa
@@ -27,4 +27,4 @@ def sorpresa(request):
         return redirect("acceso")
     
     # Aquí va tu página principal con todo el contenido
-    return render(request, "inicio/sorpresa.html")
+    return render(request, "inicio/sorpresa.html")  
